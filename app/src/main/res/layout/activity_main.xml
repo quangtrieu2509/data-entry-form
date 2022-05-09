@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/data_entry_form"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/sIDText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/student_id"
+                    android:textColor="@color/black"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:id="@+id/sIDInput"
+                    android:background="@drawable/input_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/your_answer" />
+
+                <TextView
+                    android:id="@+id/sIDRequire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/required"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/nameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/full_name"
+                    android:textColor="@color/black"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:id="@+id/nameInput"
+                    android:background="@drawable/input_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="@string/your_answer"/>
+
+                <TextView
+                    android:id="@+id/nameRequire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/required"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/IDText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/citizen_id"
+                    android:textColor="@color/black"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:id="@+id/IDInput"
+                    android:background="@drawable/input_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/your_answer"/>
+
+                <TextView
+                    android:id="@+id/IDRequire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/required"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/phoneNumText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/black"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:id="@+id/phoneNumInput"
+                    android:background="@drawable/input_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:hint="@string/your_answer"/>
+
+                <TextView
+                    android:id="@+id/phoneNumRequire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/required"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/emailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textColor="@color/black"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:id="@+id/emailInput"
+                    android:background="@drawable/input_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/your_answer"/>
+
+                <TextView
+                    android:id="@+id/emailRequire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/required"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/dobText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_of_birth"
+                    android:textColor="@color/black"
+                    android:layout_margin="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/dobInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/pickADateBtn"
+                        android:background="@drawable/input_background"
+                        android:enabled="false"
+                        android:hint="@string/your_answer"
+                        android:inputType="date"
+                        android:textColor="@color/black"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/pickADateBtn"
+                        android:onClick="pickADateOnClick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/pick_a_date" />
+                </RelativeLayout>
+
+
+                <CalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/dobRequire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/required"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/homeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/place_of_origin"
+                    android:textColor="@color/black"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:id="@+id/homeInput"
+                    android:background="@drawable/input_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="@string/your_answer"/>
+
+                <TextView
+                    android:id="@+id/homeRequire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/required"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/resText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/place_of_residence"
+                    android:textColor="@color/black"
+                    android:layout_margin="5dp"/>
+
+                <EditText
+                    android:id="@+id/resInput"
+                    android:background="@drawable/input_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="@string/your_answer"/>
+
+                <TextView
+                    android:id="@+id/resRequire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/required"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/majorText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/major"
+                    android:textColor="@color/black"
+                    android:layout_margin="5dp"/>
+
+                <RadioGroup
+                    android:id="@+id/majorContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <RadioButton
+                        android:id="@+id/computerScience"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/computer_science" />
+                    <RadioButton
+                        android:id="@+id/computerEngineering"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/computer_engineering" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/majorRequire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/required"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/proLanText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/programming_language"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"/>
+            <RadioGroup
+                android:id="@+id/proLanContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <CheckBox
+                    android:id="@+id/c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/c_c" />
+
+                <CheckBox
+                    android:id="@+id/java"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/java" />
+
+                <CheckBox
+                    android:id="@+id/python"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/python" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/proLanRequire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/required"
+                android:layout_margin="5dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/agreeCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="agreeCheckBoxOnClick"
+                android:text="@string/accept_checkbox"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:onClick="submitBtnOnClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:enabled="false"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

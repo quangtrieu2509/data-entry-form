@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">data-entry-form</string>
+    <string name="data_entry_form">DATA ENTRY FORM</string>
+    <string name="student_id"><i>Student ID <font color="@android:color/holo_red_dark">*</font></i></string>
+    <string name="required"><font color="@android:color/holo_red_dark">Required</font></string>
+    <string name="full_name"><i>Full name <font color="@android:color/holo_red_dark">*</font></i></string>
+    <string name="citizen_id"><i>Citizen ID <font color="@android:color/holo_red_dark">*</font></i></string>
+    <string name="phone_number"><i>Phone number <font color="@android:color/holo_red_dark">*</font></i></string>
+    <string name="email"><i>Email <font color="@android:color/holo_red_dark">*</font></i></string>
+    <string name="date_of_birth"><i>Date of birth</i></string>
+    <string name="place_of_origin"><i>Place of origin</i></string>
+    <string name="place_of_residence"><i>Place of residence</i></string>
+    <string name="major"><i>Major</i></string>
+    <string name="computer_science">Computer Science</string>
+    <string name="computer_engineering">Computer Engineering</string>
+    <string name="programming_language"><i>Programming language</i></string>
+    <string name="c_c">C/C++</string>
+    <string name="java">Java</string>
+    <string name="python">Python</string>
+    <string name="submit">Submit</string>
+    <string name="accept_checkbox"><i>I have read and agreed to the terms and conditions</i></string>
+    <string name="your_answer">Your answer</string>
+    <string name="pick_a_date">Pick a date</string>
+</resources>
