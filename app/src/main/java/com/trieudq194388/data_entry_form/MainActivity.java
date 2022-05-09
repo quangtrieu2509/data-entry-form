@@ -14,12 +14,14 @@ import android.widget.CalendarView;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String EMPTY_STRING = "";
+    private ScrollView scrollView;
     private EditText sIDInput, nameInput, IDInput, phoneInput, emailInput, dobInput;
     private EditText homeInput, resInput;
     private RadioGroup major;
@@ -113,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void mapping(){
+        scrollView = findViewById(R.id.scroll);
         sIDInput = findViewById(R.id.sIDInput);
         nameInput = findViewById(R.id.nameInput);
         IDInput = findViewById(R.id.IDInput);
@@ -144,7 +147,10 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(view.getContext(), "Submit successfully", Toast.LENGTH_LONG).show();
             resetData();
         }
-        else Toast.makeText(view.getContext(), "Submit failed: re-check your input data", Toast.LENGTH_LONG).show();
+        else{
+            Toast.makeText(view.getContext(), "Failed: re-check your input data", Toast.LENGTH_LONG).show();
+        }
+        scrollView.fullScroll(ScrollView.FOCUS_UP);
 
         hideSoftKeyboard(this);
     }
